@@ -1,0 +1,235 @@
+body {
+    font-family: 'Patrick Hand', cursive;
+    
+}
+
+/*HEADER*/
+header {
+    background-image: url(../Multimedia/Imagen/granos.jpg);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.logo {
+    height: 135px; width: 150px;
+}
+
+.menu {
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-link {
+    color: #fff; 
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-footer {
+    height: 135px; width: 150px;
+}
+.footer-redes p {
+   color: #fff;
+}
+.footer-redes {
+    padding: 00.5em 1em;
+    text-align: center;
+    margin: 10px 24px;
+}
+
+
+/*MAIN de Index*/
+.sobre-nosotros {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 8% 7% 5% 3%;
+}
+.sobre-nosotros-img {
+    margin-left: 3%;
+}
+.sobre-nosotros-txt h2 {
+    font-size: 2.5em;
+    border-bottom: 7px solid orange;
+}
+.sobre-nosotros-txt p {
+    font-size: 1em;
+}
+.sobre-nosotros-txt { 
+    margin-left: 3%;
+}
+
+
+.productos-famosos h2 {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 30px;
+    border-bottom: 7px solid orange;
+    width: 40%;
+    position: relative;
+    left: 32%;
+}
+.productos-famosos-img {
+    display: grid;
+    grid-template-columns: 20% 20% 20% ;
+    grid-template-rows: 95% 95%;
+    padding: 20px 8% 250px 8%;
+    gap: 2px;
+    justify-content: space-around;
+}
+.caramel {
+    height: 100%;
+    width: 100%;
+}
+.mango {
+    height: 100%;
+    width: 100%;    
+}
+.coconut {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+/*MAIN de Nosotros*/
+.quienes-somos {
+    display: grid;
+    grid-template-columns: 35% 20%;
+    grid-template-rows: 20% 35% 35%;
+    grid-template-areas:
+    'titulo titulo'
+    'imagen texto'
+    'imagen-dos texto';
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10%;
+    padding-bottom: 10px;
+}
+.quienes-somos h2 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 220%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-bottom: 7px solid orange;
+    height: 50px;
+}
+
+.img-shop-uno {
+    height: 100%;
+    width: 60%;
+    grid-area: imagen;
+    
+}
+.img-shop-dos {
+    height: 100%;
+    width: 60%;
+    grid-area: imagen-dos;
+}
+.quienes-somos p {
+    grid-area: texto;
+    
+}
+
+/*MAIN de Menu*/
+.menu-dos {
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 220%;
+    border-bottom: 7px solid orange;
+    width: 40%;
+    position: relative;
+    left: 30%;
+}
+.tipos-de-menu {
+    
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 12% 15% 12% 10% 25%;
+    gap: 30px;
+    grid-template-areas:
+    'cafeteria panes'
+    'cafeteria-p panes-p'
+    'especial especial'
+    'mango-p coconuts-p'
+    'mango coconut';
+    justify-content: center;
+    
+}
+.cafeteria {
+    grid-area: cafeteria;
+    border-bottom: 2px solid orange;;
+}
+.cafeteria-p {
+    grid-area: cafeteria-p;
+}
+.pan {
+    grid-area: panes;
+    border-bottom: 2px solid orange;;
+}
+.pan-p {
+    grid-area: panes-p;
+}
+.especial {
+    grid-area: especial;
+    text-align: center;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;;
+}
+.mango-p {
+    grid-area: mango-p;
+    
+}
+.coconut-p {
+    grid-area: coconuts-p;
+    
+}
+.mango-dos {
+    height: 100%;
+    width: 45%;
+    grid-area: mango;
+} 
+.coconut-dos {
+    height: 100%;
+    width: 45%;
+    grid-area: coconut;
+}
+
+/*MAIN de Contactos*/
+.contactar {
+    display: grid;
+    grid-template-columns: 35%;
+    grid-template-rows: 25% 35%;
+    grid-template-areas: 
+    'tipo-c mapa';
+    gap: 30px;
+    justify-content: center;
+    margin: 60px 120px;
+    border: 3px solid orange;
+    padding-top: 40px;
+}
+.titulo-contacto {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 7px solid orange;
+    width: 40%;
+    position: relative;
+    left: 28%;
+}
+.tipo-de-contacto {
+    grid-area: tipo-c;
+    text-align: center;
+}
+.mapa {
+    grid-area: mapa;
+    height: 100%;
+    width: 100%;
+}

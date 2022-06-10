@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,51 +14,63 @@
     <title>Proyercto Final</title>
 </head>
 <body>
-    <!-- HEADER -->
+   <!-- HEADER -->
+   <div class="portada">
     <header>
-      <img src="../Multimedia/Imagen/logo.png" class="logo">
-      <div>
-        <ul class="menu">
-            <li><a class="nav-link" href="./index.html">Inicio</a></li>
-            <li><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-            <li><a class="nav-link" href="./menu.html">Menu</a></li>
-            <li><a class="nav-link" href="./contactos.html">Contacto</a></li>
-        </ul>
-    </div>  
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../Multimedia/Imagen/logo.png" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              <a class="nav-link" href="./menu.html">Menu</a>
+              <a class="nav-link" href="./contactos.html">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <!-- Fin HEADER -->
+</div>
+
+<!-- Fin HEADER -->
 
     <!-- MAIN -->
-    <section> 
-        <div class="titulo-contacto">
-            <h2>Como contactarnos</h2>
-            <p>Horarios: 5:00 a 21:00 Lun a Dom</p>
+    <section class="container-fluid"> 
+      <div class="titulo-contacto">
+        <h2>Como contactarnos</h2>
+        <p>Horarios: 5:00 a 21:00 Lun a Dom</p>
+      </div>
+      <div class="contactar">
+        <div class="tipo-de-contacto"> 
+          <h3>Whatsapp: <a href="https://www.whatsapp.com/?lang=es">11-1111-1111</a></h3>
+          <h3>Mail: <a href="https://mail.google.com/mail/u/0/#inbox">angel-in-us@gmail.com</a></h3>
+          <h3>Instagram: <a href="https://www.instagram.com/">@angel-in-us</a></h3>
+          <h3>Facebook: <a href="https://www.facebook.com/">Angelinus</a></h3>
+          <h3>Twitter: <a href="https://twitter.com/">@angelinus</a></h3>
         </div>
-        <div class="contactar">
-            <div class="tipo-de-contacto"> 
-                <h3>Whatsapp: <a href="https://www.whatsapp.com/?lang=es">11-1111-1111</a></h3>
-                <h3>Mail: <a href="https://mail.google.com/mail/u/0/#inbox">angel-in-us@gmail.com</a></h3>
-                <h3>Instagram: <a href="https://www.instagram.com/">@angel-in-us</a></h3>
-                <h3>Facebook: <a href="https://www.facebook.com/">Angelinus</a></h3>
-                <h3>Twitter: <a href="https://twitter.com/">@angelinus</a></h3>
-            </div>
-            <div class="mapa"> 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60648845.6879719!2d65.19598899238476!3d21.90717209628794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1d369eee9%3A0x868d25977ec42dd9!2sAngel%20in%20us%20coffee%20Myungdong!5e0!3m2!1sen!2sar!4v1652384092051!5m2!1sen!2sar" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60648845.6879719!2d65.19598899238476!3d21.90717209628794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1d369eee9%3A0x868d25977ec42dd9!2sAngel%20in%20us%20coffee%20Myungdong!5e0!3m2!1sen!2sar!4v1652384092051!5m2!1sen!2sar" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </div>
         
        
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <img src="../Multimedia/Imagen/logo.png" class="logo-footer">
-        <div class="footer-redes">
-            <p>Segunos en nuestras redes</p>
-            <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Logo de Instagram" title="Instagram" width="35px" height="35px"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="https://cdn-icons.flaticon.com/png/512/3256/premium/3256013.png?token=exp=1652317831~hmac=633cd160a6ae03590fc6a95abe45dfd3" alt="Logo de Twitter" title="Twitter" width="35px" height="35px"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Logo de Facebook" title="Facebook" width="35px" height="35px"></a>
-        </div>
-    </footer>
+      <img src="../Multimedia/Imagen/logo.png" class="logo-footer">
+      <div class="footer-redes">
+          <p>Segunos en nuestras redes</p>
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Logo de Instagram" title="Instagram" width="35px" height="35px" class="logo-ig"></a>
+          <a href="https://www.twitter.com/" target="_blank"><img src="https://cdn-icons.flaticon.com/png/512/3256/premium/3256013.png?token=exp=1652317831~hmac=633cd160a6ae03590fc6a95abe45dfd3" alt="Logo de Twitter" title="Twitter" width="35px" height="35px" class="logo-tw"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Logo de Facebook" title="Facebook" width="35px" height="35px" class="logo-fb"></a>
+      </div>
+  </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

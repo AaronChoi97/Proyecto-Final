@@ -1,0 +1,70 @@
+@import '../base/variables';
+body {
+    font-family: 'Patrick Hand', cursive;
+}
+/*HEADER*/
+@import 'components/header';
+/*FOOTER*/
+@import 'components/footer';
+/*MAIN index*/
+@import'components/index';
+
+
+
+
+
+@media only screen and (min-width: 550px){
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: .25fr .5fr 1fr;
+        grid-template-areas:
+        'titulo'
+        'texto'
+        'img-shops';
+        justify-content: center;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+}
+@media only screen and (max-width: 992px){
+    .navbar-dark{
+        background-color: $bg-color !important;
+        z-index: 1;}
+    .quienes-somos-img{display: none;}
+    .mapa{display: none;}   
+}
+@media only screen and (min-width: 992px){
+    .sobre-nosotros{
+        grid-template-areas: 'nosotros-img nosotros-txt';
+        row-gap: 5rem;
+    }
+    .sobre-nosotros-txt {
+        place-content: center;
+    }
+    .img-shops {
+        display: none;
+    }
+    .quienes-somos {
+    grid-template-columns: auto;
+    grid-template-rows: 20% 35% 35%;
+    grid-template-areas:
+    'titulo titulo'
+    'imagen texto'
+    'imagen-dos texto';
+    justify-content:space-around;
+    gap: 10px;
+    margin-top: 4rem;
+    }
+    .contactar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'tipo-c mapa';
+        gap: 30px;
+        place-content: center;
+        padding: 40px;
+    }
+}

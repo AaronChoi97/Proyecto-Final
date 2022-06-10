@@ -1,0 +1,26 @@
+@import '../base/variables';
+
+footer {
+    background-color: $bg-color;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    .logo-footer {
+        height: 135px; width: 150px;
+    }
+    .footer-redes {
+        padding: 00.5em 1em;
+        text-align: center;
+        margin: 10px 24px;
+        p {
+            color: $headerfooter-txt-color;
+         }
+         .logo-ig:hover, .logo-tw:hover, .logo-fb:hover{
+            border: solid $redes-logo-border-color;
+        }
+    }
+}
+
+
+
+

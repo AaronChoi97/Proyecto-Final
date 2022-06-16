@@ -1,0 +1,23 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mixins';
+
+.contactar {
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+    border: 3px $border-bottom;
+    padding: 40px auto;
+    .tipo-de-contacto {
+        grid-area: tipo-c;
+        text-align: center;
+    }
+    .mapa {
+        grid-area: mapa;  
+    }
+}
+.titulo-contacto {
+    text-align: center;
+    margin: 2rem auto;
+    @include border-bot(7px solid orange);
+}

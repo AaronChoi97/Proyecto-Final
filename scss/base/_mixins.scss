@@ -1,0 +1,11 @@
+@mixin border-bot($valor){
+    border-bottom: $valor;
+}
+
+@mixin grid ($columnas, $filas, $gap, $justify-content, $margin-top){
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    gap: $gap;
+    margin-top: $margin-top;
+}

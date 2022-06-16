@@ -1,4 +1,6 @@
-@import '../base/variables';
+@import 'base/variables';
+@import 'base/extends';
+@import 'base/mixins';
 body {
     font-family: 'Patrick Hand', cursive;
 }
@@ -8,6 +10,12 @@ body {
 @import 'components/footer';
 /*MAIN index*/
 @import'components/index';
+/*MAIN nosotros*/
+@import 'components/nosotros';
+/*MAIN menu*/
+@import 'components/menu';
+/*MAIN contactos*/
+@import 'components/contactos';
 
 
 
@@ -15,17 +23,12 @@ body {
 
 @media only screen and (min-width: 550px){
     .quienes-somos {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: .25fr .5fr 1fr;
+        @include grid (auto,.25fr .5fr 1fr, 10px, center, 4rem);
         grid-template-areas:
         'titulo'
         'texto'
         'img-shops';
-        justify-content: center;
-        gap: 10px;
-        justify-content: center;
-        margin-top: 4rem;
+        
     }
 }
 @media only screen and (max-width: 992px){
@@ -47,24 +50,16 @@ body {
         display: none;
     }
     .quienes-somos {
-    grid-template-columns: auto;
-    grid-template-rows: 20% 35% 35%;
-    grid-template-areas:
-    'titulo titulo'
-    'imagen texto'
-    'imagen-dos texto';
-    justify-content:space-around;
-    gap: 10px;
-    margin-top: 4rem;
+        @include grid (auto,20% 35% 35%, 10px, center, 4rem);
+        grid-template-areas:
+        'titulo titulo'
+        'imagen texto'
+        'imagen-dos texto';
     }
     .contactar {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
         grid-template-areas: 
         'tipo-c mapa';
-        gap: 30px;
-        place-content: center;
         padding: 40px;
+        @include grid (1fr 1fr,1fr, 30px, center, none);
     }
 }

@@ -1,15 +1,17 @@
 @import '../base/variables';
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixins';
 
 .sobre-nosotros {
     text-align: center;
-    display: grid;
-    grid-template-columns: auto;
     grid-template-areas: 'nosotros-img' 'nosotros-txt';
-    justify-content: space-around;
     margin: 2rem auto;
+    @include grid (auto, auto, auto, space-around, 2rem);
+    
     .sobre-nosotros-img {
         margin-left: 10 auto;
-        height: $img-size;
+        height: nth($list: $img-size, $n: 1);
         width: auto;
         grid-area: 'nosotros-img';
         
@@ -19,11 +21,11 @@
         grid-area: 'nosotros-txt';
         place-content: center;
         h2 {
-            font-size: 2.5em;
+            font-size: nth($list: $txt-size, $n: 3);
             border-bottom:  $border-bottom;
         }
         p {
-            font-size: 1em;
+            font-size: nth($list: $txt-size, $n: 1);
             width: auto;
         }
     }
@@ -34,7 +36,7 @@
         text-align: center;
         margin-top: 4em;
         margin-bottom: 30px;
-        border-bottom: 7px $border-bottom;
+        @include border-bot(7px solid orange);
         width: 40%;
         position: relative;
         left: 32%;
@@ -43,7 +45,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr;
-        width: 80%;
+        width: nth($list: $img-size, $n: 2);
         margin: 50px auto;
         gap: 6px;
         justify-content: space-around;

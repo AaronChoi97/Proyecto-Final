@@ -1,14 +1,15 @@
 @import '../base/variables';
+@import '../base/listas';
 
 .portada header {
     background-image: url(../Multimedia/Imagen/granos.jpg);
-    width: 100%;
+    width: nth($list: $img-size, $n: 1);
     .navbar-toggler-icon{
         background-color: $bg-color;
     }
     
     .logo {
-        height: 135px; width: 150px;
+        height: $logo-height; width: $logo-width;
     }
     .navbar-nav {
         margin-left: auto !important;

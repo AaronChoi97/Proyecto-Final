@@ -71,7 +71,7 @@ footer {
     
 }
 .sobre-nosotros-img {
-    margin-left: 10 auto;
+    margin-left: 10px auto;
     height: 100%;
     width: auto;
     grid-area: 'nosotros-img';

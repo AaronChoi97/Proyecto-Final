@@ -1,0 +1,48 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixins';
+
+
+.quienes-somos {
+        grid-template-areas:
+        'titulo'
+        'texto'
+        'img-shops';
+        @include grid (auto,.25fr 1fr 1fr, 10px, center, 4rem);
+    h2 {
+        grid-area: titulo;
+        text-align: center;
+        font-size: nth($list: $txt-size, $n: 4);
+        @include border-bot(solid orange);
+    }
+    .quienes-somos-img{
+        .img-shop-uno {
+            height: nth($list: $img-size, $n: 1);
+            width: nth($list: $img-size, $n: 3);
+            grid-area: imagen;
+            &:hover {
+                @extend %hover;
+            }
+            
+        }
+        .img-shop-dos {
+            height: nth($list: $img-size, $n: 1);
+            width: nth($list: $img-size, $n: 3);
+            grid-area: imagen-dos;
+            &:hover {
+                @extend %hover;
+            }
+        }
+    }
+    .img-shops {
+        grid-area: img-shops;
+    }
+    .quienes-somos p {
+        grid-area: texto;
+    }
+}
+
+
+
+

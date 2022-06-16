@@ -1,3 +1,9 @@
+.quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
+  transform: scale(1.5);
+  border: solid black;
+  border-radius: 2%;
+  transition: all .5s; }
+
 body {
   font-family: 'Patrick Hand', cursive; }
 
@@ -40,13 +46,21 @@ footer {
       border: solid white; }
 
 /*MAIN index*/
+.quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
+  transform: scale(1.5);
+  border: solid black;
+  border-radius: 2%;
+  transition: all .5s; }
+
 .sobre-nosotros {
   text-align: center;
+  grid-template-areas: 'nosotros-img' 'nosotros-txt';
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: 'nosotros-img' 'nosotros-txt';
-  justify-content: space-around;
-  margin: 2rem auto; }
+  grid-template-rows: auto;
+  gap: auto;
+  margin-top: 2rem; }
   .sobre-nosotros .sobre-nosotros-img {
     margin-left: 10 auto;
     height: 100%;
@@ -57,10 +71,10 @@ footer {
     grid-area: 'nosotros-txt';
     place-content: center; }
     .sobre-nosotros .sobre-nosotros-txt h2 {
-      font-size: 2.5em;
+      font-size: 2.5rem;
       border-bottom: solid orange; }
     .sobre-nosotros .sobre-nosotros-txt p {
-      font-size: 1em;
+      font-size: 1rem;
       width: auto; }
 
 .productos-famosos h2 {
@@ -86,16 +100,114 @@ footer {
   border-radius: 45%;
   transition: all .5s; }
 
+/*MAIN nosotros*/
+.quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
+  transform: scale(1.5);
+  border: solid black;
+  border-radius: 2%;
+  transition: all .5s; }
+
+.quienes-somos {
+  grid-template-areas: 'titulo' 'texto' 'img-shops';
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 0.25fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 4rem; }
+  .quienes-somos h2 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 220%;
+    border-bottom: solid orange; }
+  .quienes-somos .quienes-somos-img .img-shop-uno {
+    height: 100%;
+    width: 60%;
+    grid-area: imagen; }
+  .quienes-somos .quienes-somos-img .img-shop-dos {
+    height: 100%;
+    width: 60%;
+    grid-area: imagen-dos; }
+  .quienes-somos .img-shops {
+    grid-area: img-shops; }
+  .quienes-somos .quienes-somos p {
+    grid-area: texto; }
+
+/*MAIN menu*/
+.quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
+  transform: scale(1.5);
+  border: solid black;
+  border-radius: 2%;
+  transition: all .5s; }
+
+.menu-dos {
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 220%;
+  border-bottom: 7px solid orange;
+  width: 40%;
+  margin-bottom: 2rem;
+  position: relative;
+  left: 30%; }
+
+.tipos-de-menu {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-template-rows: .15fr .15fr .15fr .15fr 1fr;
+  gap: 30px;
+  grid-template-areas: 'cafeteria panes' 'cafeteria-p panes-p' 'especial especial' 'mango-p coconuts-p' 'mango coconut';
+  justify-content: center; }
+  .tipos-de-menu .cafeteria {
+    grid-area: cafeteria;
+    border-bottom: 2px solid orange; }
+  .tipos-de-menu .cafeteria-p {
+    grid-area: cafeteria-p; }
+  .tipos-de-menu .pan {
+    grid-area: panes;
+    border-bottom: 2px solid orange; }
+  .tipos-de-menu .pan-p {
+    grid-area: panes-p; }
+  .tipos-de-menu .especial {
+    grid-area: especial;
+    text-align: center;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange; }
+  .tipos-de-menu .mango-p {
+    grid-area: mango-p; }
+  .tipos-de-menu .coconut-p {
+    grid-area: coconuts-p; }
+  .tipos-de-menu .mango-dos {
+    width: 100%;
+    grid-area: mango; }
+  .tipos-de-menu .coconut-dos {
+    width: 100%;
+    grid-area: coconut; }
+
+/*MAIN contactos*/
+.contactar {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+  border: 3px solid orange;
+  padding: 40px auto; }
+  .contactar .tipo-de-contacto {
+    grid-area: tipo-c;
+    text-align: center; }
+  .contactar .mapa {
+    grid-area: mapa; }
+
+.titulo-contacto {
+  text-align: center;
+  margin: 2rem auto;
+  border-bottom: 7px solid orange; }
+
 @media only screen and (min-width: 550px) {
   .quienes-somos {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: .25fr .5fr 1fr;
-    grid-template-areas: 'titulo' 'texto' 'img-shops';
-    justify-content: center;
+    grid-template-rows: 0.25fr 0.5fr 1fr;
     gap: 10px;
-    justify-content: center;
-    margin-top: 4rem; } }
+    margin-top: 4rem;
+    grid-template-areas: 'titulo' 'texto' 'img-shops'; } }
 
 @media only screen and (max-width: 992px) {
   .navbar-dark {
@@ -115,17 +227,17 @@ footer {
   .img-shops {
     display: none; }
   .quienes-somos {
+    display: grid;
     grid-template-columns: auto;
     grid-template-rows: 20% 35% 35%;
-    grid-template-areas: 'titulo titulo' 'imagen texto' 'imagen-dos texto';
-    justify-content: space-around;
     gap: 10px;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    grid-template-areas: 'titulo titulo' 'imagen texto' 'imagen-dos texto'; }
   .contactar {
+    grid-template-areas: 'tipo-c mapa';
+    padding: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 'tipo-c mapa';
     gap: 30px;
-    place-content: center;
-    padding: 40px; } }
+    margin-top: none; } }

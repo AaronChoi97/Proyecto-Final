@@ -1,5 +1,5 @@
 .quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) translateX(20%);
   border: solid black;
   border-radius: 2%;
   transition: all .5s; }
@@ -47,7 +47,7 @@ footer {
 
 /*MAIN index*/
 .quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) translateX(20%);
   border: solid black;
   border-radius: 2%;
   transition: all .5s; }
@@ -112,7 +112,7 @@ h1 {
 
 /*MAIN nosotros*/
 .quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) translateX(20%);
   border: solid black;
   border-radius: 2%;
   transition: all .5s; }
@@ -148,7 +148,7 @@ h1 {
 
 /*MAIN menu*/
 .quienes-somos .quienes-somos-img .img-shop-uno:hover, .quienes-somos .quienes-somos-img .img-shop-dos:hover, .tipos-de-menu .mango-dos:hover, .tipos-de-menu .coconut-dos:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) translateX(20%);
   border: solid black;
   border-radius: 2%;
   transition: all .5s; }

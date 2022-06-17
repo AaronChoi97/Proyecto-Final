@@ -42,13 +42,9 @@
         left: 32%;
     }
     .productos-famosos-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr;
+        @include grid (1fr 1fr 1fr, 1fr, 6px, space-around, none);
         width: nth($list: $img-size, $n: 2);
         margin: 50px auto;
-        gap: 6px;
-        justify-content: space-around;
     }
     .caramel:hover, .mango:hover, .coconut:hover {
         transform: scale(2);

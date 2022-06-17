@@ -90,10 +90,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  width: 80%;
-  margin: 50px auto;
   gap: 6px;
-  justify-content: space-around; }
+  margin-top: none;
+  width: 80%;
+  margin: 50px auto; }
 
 .productos-famosos .caramel:hover, .productos-famosos .mango:hover, .productos-famosos .coconut:hover {
   transform: scale(2);

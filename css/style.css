@@ -52,6 +52,14 @@ footer {
   border-radius: 2%;
   transition: all .5s; }
 
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 250%;
+  border-bottom: 7px solid orange;
+  margin: 4rem;
+  padding: 10px; }
+
 .sobre-nosotros {
   text-align: center;
   grid-template-areas: 'nosotros-img' 'nosotros-txt';
@@ -60,7 +68,8 @@ footer {
   grid-template-columns: auto;
   grid-template-rows: auto;
   gap: auto;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  justify-content: space-around; }
   .sobre-nosotros .sobre-nosotros-img {
     margin-left: 10 auto;
     height: 100%;
@@ -92,6 +101,7 @@ footer {
   grid-template-rows: 1fr;
   gap: 6px;
   margin-top: none;
+  justify-content: space-around;
   width: 80%;
   margin: 50px auto; }
 
@@ -113,12 +123,16 @@ footer {
   grid-template-columns: auto;
   grid-template-rows: 0.25fr 1fr 1fr;
   gap: 10px;
-  margin-top: 4rem; }
-  .quienes-somos h2 {
+  margin-top: 4rem;
+  justify-content: center; }
+  .quienes-somos h1 {
     grid-area: titulo;
     text-align: center;
     font-size: 220%;
-    border-bottom: solid orange; }
+    height: 75px;
+    border-bottom: solid orange;
+    position: relative;
+    bottom: 5rem; }
   .quienes-somos .quienes-somos-img .img-shop-uno {
     height: 100%;
     width: 60%;
@@ -140,22 +154,23 @@ footer {
   transition: all .5s; }
 
 .menu-dos {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-family: 'Patrick Hand', cursive;
   font-size: 220%;
   border-bottom: 7px solid orange;
   width: 40%;
-  margin-bottom: 2rem;
-  position: relative;
-  left: 30%; }
+  margin: 2rem auto; }
 
 .tipos-de-menu {
+  grid-template-areas: 'cafeteria panes' 'cafeteria-p panes-p' 'especial especial' 'mango-p coconuts-p' 'mango coconut';
   display: grid;
   grid-template-columns: 35% 35%;
-  grid-template-rows: .15fr .15fr .15fr .15fr 1fr;
+  grid-template-rows: 0.15fr 0.15fr 0.15fr 0.15fr 1fr;
   gap: 30px;
-  grid-template-areas: 'cafeteria panes' 'cafeteria-p panes-p' 'especial especial' 'mango-p coconuts-p' 'mango coconut';
-  justify-content: center; }
+  margin-top: 1px;
+  justify-content: center;
+  margin: 2rem; }
   .tipos-de-menu .cafeteria {
     grid-area: cafeteria;
     border-bottom: 2px solid orange; }
@@ -207,6 +222,7 @@ footer {
     grid-template-rows: 0.25fr 0.5fr 1fr;
     gap: 10px;
     margin-top: 4rem;
+    justify-content: center;
     grid-template-areas: 'titulo' 'texto' 'img-shops'; } }
 
 @media only screen and (max-width: 992px) {
@@ -232,6 +248,7 @@ footer {
     grid-template-rows: 20% 35% 35%;
     gap: 10px;
     margin-top: 4rem;
+    justify-content: center;
     grid-template-areas: 'titulo titulo' 'imagen texto' 'imagen-dos texto'; }
   .contactar {
     grid-template-areas: 'tipo-c mapa';
@@ -240,4 +257,5 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 30px;
-    margin-top: none; } }
+    margin-top: none;
+    justify-content: center; } }

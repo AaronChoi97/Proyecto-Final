@@ -3,6 +3,15 @@
 @import '../base/extends';
 @import '../base/mixins';
 
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    @include border-bot (7px solid orange);
+    margin: 4rem;
+    padding: 10px;
+}
+
 .sobre-nosotros {
     text-align: center;
     grid-template-areas: 'nosotros-img' 'nosotros-txt';

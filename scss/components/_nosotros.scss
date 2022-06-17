@@ -10,11 +10,14 @@
         'texto'
         'img-shops';
         @include grid (auto,.25fr 1fr 1fr, 10px, center, 4rem);
-    h2 {
+        h1 {
         grid-area: titulo;
         text-align: center;
         font-size: nth($list: $txt-size, $n: 4);
+        height: 75px;
         @include border-bot(solid orange);
+        position: relative;
+        bottom: 5rem;
     }
     .quienes-somos-img{
         .img-shop-uno {

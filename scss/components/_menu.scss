@@ -3,29 +3,27 @@
 @import '../base/extends';
 @import '../base/mixins';
 
+
+
 .menu-dos {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-family: 'Patrick Hand', cursive;
     font-size: nth($list: $txt-size, $n: 4);
     @include border-bot(7px solid orange);
     width: 40%;
-    margin-bottom: 2rem;
-    position: relative;
-    left: 30%;
+    margin: 2rem auto;
+       
 }
 .tipos-de-menu {
-    
-    display: grid;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: .15fr .15fr .15fr .15fr 1fr;
-    gap: 30px;
     grid-template-areas:
     'cafeteria panes'
     'cafeteria-p panes-p'
     'especial especial'
     'mango-p coconuts-p'
     'mango coconut';
-    justify-content: center;
+    @include grid (35% 35%, .15fr .15fr .15fr .15fr 1fr, 30px, center, 1px);
+    margin: 2rem;
     .cafeteria {
         grid-area: cafeteria;
         @include border-bot(2px solid orange);

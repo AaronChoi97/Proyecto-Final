@@ -1,7 +1,7 @@
 @import '../base/variables';
 @import '../base/listas';
 
-.portada header {
+header {
     background-image: url(../Multimedia/Imagen/granos.jpg);
     width: nth($list: $img-size, $n: 1);
     .navbar-toggler-icon{

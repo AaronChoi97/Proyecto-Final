@@ -133,14 +133,16 @@ h1 {
     border-bottom: solid orange;
     position: relative;
     bottom: 5rem; }
-  .quienes-somos .quienes-somos-img .img-shop-uno {
-    height: 100%;
-    width: 60%;
-    grid-area: imagen; }
-  .quienes-somos .quienes-somos-img .img-shop-dos {
-    height: 100%;
-    width: 60%;
-    grid-area: imagen-dos; }
+  .quienes-somos .quienes-somos-img {
+    margin: auto 4rem; }
+    .quienes-somos .quienes-somos-img .img-shop-uno {
+      height: 100%;
+      width: 60%;
+      grid-area: imagen; }
+    .quienes-somos .quienes-somos-img .img-shop-dos {
+      height: 100%;
+      width: 60%;
+      grid-area: imagen-dos; }
   .quienes-somos .img-shops {
     grid-area: img-shops; }
   .quienes-somos .quienes-somos p {
@@ -258,4 +260,6 @@ h1 {
     grid-template-rows: 1fr;
     gap: 30px;
     margin-top: none;
-    justify-content: center; } }
+    justify-content: center; }
+  .biografia {
+    margin: auto 6rem; } }

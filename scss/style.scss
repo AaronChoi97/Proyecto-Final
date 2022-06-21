@@ -62,4 +62,7 @@ body {
         padding: 40px;
         @include grid (1fr 1fr,1fr, 30px, center, none);
     }
+    .biografia {
+        margin: auto 6rem;
+      }
 }
